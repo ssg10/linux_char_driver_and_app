@@ -14,10 +14,7 @@ Some features from user space program to access the memory:
 - read()
 - write()
 - mmap(): The sleak way to access physical memory from user space.
-
-          User can map kernel physical memory into kernel virtual memory and then mapped directly into user-space virtual memory.
-          
-          User can then use its user-space virtual memory to do data manipulation and the changes are directly reflected in the physical memory.
+          User can map kernel physical memory into kernel virtual memory and then mapped directly into user-space virtual memory. User can then use its user-space virtual memory to do data manipulation and the changes are directly reflected in the physical memory.
 
 Written in C.
 
