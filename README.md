@@ -8,7 +8,15 @@ and high-performance computing.
 
 Taken as it is without prototype hardware available, it is using RAM space as scratch memory
 and exercising data movement between Linux user-space to kernel space to memory hardware.
-A full top-to-bottom software solution in Linux.  
+A full top-to-bottom software solution in Linux.
+
+Some features from user space program to access the memory:
+- read()
+- write()
+- mmap(): The sleak way to access physical memory from user space.
+          User can map kernel physical memory into kernel virtual memory and then mapped directly into user-space virtual memory
+          User can then use its user-space virtual memory to do data manipulation and the changes are directly reflected
+             in the physical memory.
 
 Written in C.
 
